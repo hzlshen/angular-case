@@ -1,0 +1,30 @@
+<!--双花括号的插值表达式-->
+<p>My current hero is {{current.name}}</p>
+
+<!--插值表达式可对html标签文本或标签属性赋值-->
+<h3>
+  {{title}}
+  <img src="{{heroImageUrl}}" alt="" style="height: 30px;">
+</h3>
+
+<p>The sum of 1 + 1 is {{1 + 1}}</p>
+<p>The sum of 1 + 1 is not {{1 + 1 + getVal()}}</p>
+<!--//Angular 对所有双花括号中的表达式求值，把求值的结果转换成字符串，
+并把它们跟相邻的字符串字面量连接起来。最后，把这个组合出来的插值结果赋给元素或指令的属性。-->
+
+<!--典型的表达式上下文就是这个组件实例-->
+{{title}}
+<span [hidden]="isUnchanged">changed</span>
+
+<!--表达式的上下文可以包括组件之外的对象-->
+<div *ngFor="let hero of heroes"{{hero.name}}></div>
+<input #heroInput>{{heroInput.value}}
+
+<!--事件绑定-->
+<button (click)="deleteHero()">Delete hero</button>
+
+<!--语句上下文引用模板上下文中的属性-->
+<button (click)="onSave($event)">Save</button>
+<button *ngFor="let hero of heroes" (click)="deleteHero(hero)">{{hero.name}}</button>
+
+
