@@ -5,3 +5,15 @@
 
 *ngFor
 
+运行：
+
+git https://github.com/hzlshen/angular-case.git
+
+cd dispaly-data
+
+npm install
+
+npm start
+
+
+
