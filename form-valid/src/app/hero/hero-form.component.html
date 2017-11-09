@@ -5,5 +5,16 @@
             <label for="name">姓名：</label>
             <input type="text" class="form-control" id="name" required>
         </div>
+        <div class="form-group">
+            <label for="alterEgo">Alter Ego</label>
+            <input type="text" class="form-control" id="alterEgo">
+        </div>
+        <div class="form-group">
+            <label for="power">Hello Power</label>
+            <select name="" id="power" class="form-control">
+              <option [value]="pow" *ngFor="let pow of powers" >{{pow}}</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success">提交</button>
     </form>
 </div>
