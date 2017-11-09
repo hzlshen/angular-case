@@ -5,17 +5,20 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ClickMeComponent } from './click-me.component';
 import {FormsModule} from '@angular/forms';
-import { HeroComponent } from './hero/hero.component';
+// import { HeroComponent } from './hero/hero.component';
+import { HeroFormComponent } from './hero/hero-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClickMeComponent,
     KeyupComponent,
-    HeroComponent
+    // HeroComponent,
+
   ],
   imports: [
     BrowserModule,
+    HeroFormComponent,
     FormsModule
   ],
   providers: [],
