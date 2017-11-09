@@ -7,9 +7,14 @@ import { Component, OnInit } from "@angular/core";
 })
 
 export class KeyupComponent implements OnInit {
-  
-  constructor() { 
 
+  constructor() {
+
+  }
+
+  values ="";
+  onKey(event:any){
+    this.values+= event.target.value+'|';
   }
 
   ngOnInit() {
