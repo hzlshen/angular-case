@@ -7,11 +7,11 @@ import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClickMeComponent
   ],
   imports: [
     BrowserModule,
-    ClickMeComponent,
     FormsModule
   ],
   providers: [],
