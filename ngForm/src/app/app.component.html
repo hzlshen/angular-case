@@ -1,0 +1,24 @@
+<!--事件绑定-->
+<button (click)="onClickMe()">Click me!</button>
+{{clickMessage}}
+
+<!--通过$event对象取得用户输入-->
+<input (keyup)="onKey($event)">
+<p>{{values}}</p>
+
+<!--模板引用变量-->
+<input #box (keyup)="0">
+<p>{{box.value}}</p>
+
+<!--用key.enter监听回车键 键值是enter才执行-->
+<input #bac (keyup.enter)="onEnter(bac.value)">
+<p>{{value}}</p>
+
+<!--简单版英雄指南组件-->
+<input #newHero
+       (keyup.enter)="addHero(newHero.value)"
+       (blur)="addHero(newHero.value); newHero.value='' ">
+
+<button (click)="addHero(newHero.value)">Add</button>
+
+<ul><li *ngFor="let hero of heroes">{{hero}}</li></ul>
