@@ -5,12 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ClickMeComponent } from './click-me.component';
 import {FormsModule} from '@angular/forms';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClickMeComponent,
-    KeyupComponent
+    KeyupComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
