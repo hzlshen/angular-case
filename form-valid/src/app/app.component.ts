@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
-import { HeroFormComponent } from './hero/hero-form.component';
+
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: '<app-hero-form></app-hero-form>'
 })
-export class AppComponent {
-  title = 'app';
-}
+export class AppComponent { }
