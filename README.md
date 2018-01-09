@@ -3,7 +3,7 @@
 
 $  git clone https://github.com/hzlshen/angular-case.git
 
-cd ../
+cd /
 
 npm install 
 
